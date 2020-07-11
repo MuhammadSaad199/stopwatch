@@ -37,6 +37,7 @@ var msechead = document.getElementById("msec")
 var interval;
 
 
+
 function timer(){
 msec++
 msechead.innerHTML = msec
@@ -54,13 +55,13 @@ else if(sec >=60){
 
 function start(){
 interval = setInterval(timer,10)
-document.getElementById('btn1').disabled=true
+document.getElementById('btn').disabled=true
 
 }
 
 function stop(){
     clearInterval (interval);
-    document.getElementById('btn2').disabled=false
+    document.getElementById('btn').disabled=false
 }
 
 function reset(){
@@ -71,6 +72,6 @@ minhead.innerHTML = min;
 sechead.innerHTML= sec;
 msechead.innerHTML = msec;
 stop();
-document.getElementsByClassName('btn3').disabled=false
+document.getElementsById('btn').disabled=false
 }
 
